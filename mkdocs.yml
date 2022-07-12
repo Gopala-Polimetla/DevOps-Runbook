@@ -1,1 +1,37 @@
-site_name: My Docs
+site_name: My Demo Mkdocs Runbbok
+site_description: Demo Run Book
+repo_url: https://github.com/Gopala-Polimetla/DevOps-Runbook
+# remove below line if you dont want an edit link
+edit_uri: blob/master/docs
+nav:
+  - Home: index.md
+  - About:
+    - About Runnbook: AB_about.md
+    - Design: AB_design.md
+  - DevOps Tools:
+    - Github: DT_github.md
+    - Jenkins: DT_jenkins.md
+  - Cloud:
+    - About Cloud: CL_about.md
+    - AWS Cloud: CL_aws.md
+
+theme:
+  name: material
+  palette:
+    scheme: default
+
+dev_addr: 127.0.0.1:9999
+site_dir: docs_build
+extra_css:
+  - css/custome_style.css
+extra_javascript:
+  - js/links_in_new_tabs.js
+markdown_extensions:
+  - admonition:
+  - codehilite:
+  - extre:
+  - pymdownx.magiclink:
+  - sane_listes:
+  - smarty:
+  - toc:
+      permalink: True
